@@ -1,0 +1,12 @@
+
+// Abstract Class: Abstract class is an incomplete class . It can be extended by other class. The objects of an Abstract class can not be created
+//Abstract class can Implement an Interface
+public abstract class Car implements CarMain {
+	public void speed() {
+		System.out.println("Inside Car class Speed");
+	}
+	
+	public void refuel() {
+		System.out.println("Inside Car class refuel");
+	}
+}

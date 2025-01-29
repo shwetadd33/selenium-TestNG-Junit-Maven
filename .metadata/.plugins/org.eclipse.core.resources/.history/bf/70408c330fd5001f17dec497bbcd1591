@@ -1,0 +1,14 @@
+package testcases;
+
+import org.junit.runners.Parameterized;
+
+@RunWith (Parameterized.class)
+public class LoginTest {
+	String username;
+	String password;
+	
+	public void LoginTest() {
+		
+	}
+
+}

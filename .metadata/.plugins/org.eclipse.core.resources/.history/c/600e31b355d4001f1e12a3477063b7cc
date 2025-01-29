@@ -1,0 +1,7 @@
+
+public interface CarMain {
+	public void speed();
+	public void maintain();
+	public void refuel();
+	public void price();
+}

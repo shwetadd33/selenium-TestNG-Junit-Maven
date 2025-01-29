@@ -1,0 +1,21 @@
+package reports;
+
+import java.io.File;
+import java.util.Date;
+
+import org.openqa.selenium.devtools.idealized.Network.UserAgent;
+
+public class Temp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Date d = new Date();
+		System.out.println(d.toString().replaceAll(":", "-"));
+		
+		String reportsFolder = d.toString().replaceAll(":", "-") + "//screenshots"
+		
+		String path = System.getProperty("user.dir") + "//reports//" + reportsFolder
+		File file = new File(path)
+	}
+
+}

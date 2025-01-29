@@ -1,0 +1,60 @@
+package testcases;
+
+import java.util.Arrays;
+import java.util.Collection;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
+//Step 1:
+@RunWith (Parameterized.class)
+public class LoginTest {
+	
+	// Step 2:
+	String username;
+	String password;
+	String browser;
+	
+	// Step3: build a constructor
+	
+	public LoginTest(String username, String password, String browser) {
+		this.username = username;
+		this.password = password;
+		this.browser = browser;
+	}
+	
+	@Test
+	public void loginTest() {
+		System.out.println(username+"----"+ password + "----"+ browser);
+	}
+	
+	// Step 4:
+	@Parameters
+	public static Collection<Object[]> getData(){
+		// Collection here means , This getData will return the 2 dimensional array as a single List.
+		Object[][] data = new Object[4][3];   // I want to run the test 4 times and 3 means it has 3 parameters.
+		// 1st row
+		data [0][0]="User1";
+		data [0][1]="Pass1";
+		data [0][2]="Mozila";
+		
+		//2
+		data [1][0]="User2";
+		data [1][1]="Pass2";
+		data [1][2]="Chrome";
+
+		//3
+		data [2][0]="User3";
+		data [2][1]="Pass3";
+		data [2][2]="IE";
+		
+		//4
+		data [3][0]="User4";
+		data [3][1]="Pass4";
+		data [3][2]="Safari";
+		
+		return Arrays.asList(data);
+		
+	}
+}

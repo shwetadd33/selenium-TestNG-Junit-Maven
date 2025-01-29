@@ -1,0 +1,32 @@
+package optionsandprofiling;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.Test;
+
+public class ChromeProfilingAndOptions {
+	
+	@Test
+	public void chrome() {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\browserdrivers\\chromedriver.exe");
+		//System.setProperty(ChromeDriverService.CHROME_DRIVER_LOG_PROPERTY, "logs\\chrome.log");
+		//System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
+		ChromeOptions ops = new ChromeOptions();
+		
+		// Disable notifications
+		ops.addArguments("--disable-notifications");
+		//Maximize the screen
+		ops.addArguments("--start-maximized");
+		//Ignore certificate
+		ops.addArguments("--ignore-certificate-errors");
+		ops.add_argument("--disable-dev-shm-usage")
+		// Set a Profile to open a specific profile of a user. 
+		ops.addArguments("user-data-dir=C:\\Users\\Shweta\\AppData\\Local\\Google\\Chrome\\User Data");
+		
+		ChromeDriver cd = new ChromeDriver(ops);
+		cd.get("http://pushengage.com/demo");
+	}
+
+}

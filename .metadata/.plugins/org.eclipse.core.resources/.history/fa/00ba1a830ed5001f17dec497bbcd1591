@@ -1,0 +1,24 @@
+package testcases;
+
+import org.junit.FixMethodOrder;
+import org.junit.Test;
+import org.junit.runners.MethodSorters;
+
+@FixMethodOrder(MethodSorters.DEFAULT) // Defined an order in which the testcases should be run(Alphabetically ascending order)
+public class ShopMobilePhone {
+	
+	@Test     // Annotation to specify that this is a testcase
+	public void searchForMobile() {
+		System.out.println("Searching for mobile");
+	}
+	
+	@Test
+	public void selectMobile() {
+		System.out.println("Selecting Mobile");
+	}
+	
+	@Test
+	public void checkout() {
+		System.out.println("Checkout Mobile");
+	}
+}

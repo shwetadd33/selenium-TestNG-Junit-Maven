@@ -1,0 +1,10 @@
+
+public abstract class Car {
+	public void speed() {
+		System.out.println("Inside Car class Speed");
+	}
+	
+	public void refuel() {
+		System.out.println("Inside Car class refuel");
+	}
+}

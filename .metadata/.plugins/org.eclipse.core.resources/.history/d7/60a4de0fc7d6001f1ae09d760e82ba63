@@ -1,0 +1,49 @@
+package testcases;
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.ReportService;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
+
+
+public class LoginTest {
+	ExtentTest test;
+	ExtentReports reports;
+	
+	@BeforeMethod
+	public void init() {
+		ExtentReports reports = new ExtentReports();
+		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "\\reports");
+		sparkReporter.config().setReportName("Production Regression Testing");
+		sparkReporter.config().setDocumentTitle("Automation Reports");
+		sparkReporter.config().setTheme(Theme.STANDARD);
+		sparkReporter.config().setEncoding("utf-8");
+		
+		reports.attachReporter(sparkReporter);
+		
+		ExtentTest test = reports.createTest("loginTest");
+	}
+	
+	public void quit() {
+		reports.flush();
+	}
+
+	@Test
+	public void login() {
+		
+		test.log(Status.INFO, "Starting test case Login");
+		test.log(Status.INFO, "Opening Browser");
+		test.log(Status.FAIL, "404 Error");
+		Assert.fail("404, Error");
+		test.log(Status.PASS, "Test Passed");
+		
+		reports.flush();  // generates the report
+	}
+}

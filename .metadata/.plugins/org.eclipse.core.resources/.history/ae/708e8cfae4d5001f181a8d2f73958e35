@@ -1,0 +1,18 @@
+package testcases;
+
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+public class ValidateUserRegTest {
+	
+	@Test
+	public void validate() {
+		
+		SoftAssert softAssert = new SoftAssert();
+		
+		softAssert.assertEquals("ABC", "ABC");
+		softAssert.assertEquals("ABC", "PQR");
+		softAssert.assertTrue(5>2,"Custom Error Message");
+	}
+
+}

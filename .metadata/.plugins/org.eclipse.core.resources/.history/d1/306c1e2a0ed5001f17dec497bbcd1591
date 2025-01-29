@@ -1,0 +1,24 @@
+package testcases;
+
+import org.junit.FixMethodOrder;
+import org.junit.Test;
+import org.junit.runners.MethodSorters;
+
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+public class ShopMobilePhone {
+	
+	@Test
+	public void serachForMobile() {
+		System.out.println("Searching for mobile");
+	}
+	
+	@Test
+	public void selectMobile() {
+		System.out.println("Selecting Mobile");
+	}
+	
+	@Test
+	public void checkout() {
+		System.out.println("Checkout Mobile");
+	}
+}

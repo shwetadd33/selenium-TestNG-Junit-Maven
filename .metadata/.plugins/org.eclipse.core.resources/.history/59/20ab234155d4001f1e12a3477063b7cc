@@ -1,0 +1,13 @@
+
+public class BMW extends Car{
+	
+	public void maintain() {
+		System.out.println("Inside BMW maintain");
+	}
+	
+	@Override
+	public void speed() {
+		System.out.println("Inside BMW speed()");
+	}
+	
+}

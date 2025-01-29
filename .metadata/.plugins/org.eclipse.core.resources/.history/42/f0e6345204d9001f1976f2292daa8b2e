@@ -1,0 +1,11 @@
+name: Suite
+configFailurePolicy: skip
+tests:
+  - name: Login Test
+  classes:
+    - testcases.LoginTest
+
+  - name: Registration Test
+  classes:
+    - testcases.RegistrationTest
+

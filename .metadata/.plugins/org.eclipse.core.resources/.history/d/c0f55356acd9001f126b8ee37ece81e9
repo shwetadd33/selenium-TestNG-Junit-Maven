@@ -1,0 +1,8 @@
+package browsers;
+
+import org.testng.annotations.Test;
+
+public class Temp {
+	public static void main(String)
+	System.setProperty("webdriver.chrome.driver", "C:\\chrome_driver\\chromedriver-win64\\chromedriver.exe");
+}

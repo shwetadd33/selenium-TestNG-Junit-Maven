@@ -1,0 +1,13 @@
+package browsers;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.google.common.annotations.VisibleForTesting;
+
+public class SeleniumBasics {
+
+	@Test
+	public void testApp() {
+		ChromeDriver cd = new ChromeDriver();
+	}
+}

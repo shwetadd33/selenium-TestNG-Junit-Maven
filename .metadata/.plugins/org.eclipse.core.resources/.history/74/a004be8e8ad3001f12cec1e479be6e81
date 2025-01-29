@@ -1,0 +1,17 @@
+
+public class Client {
+
+	public static void main(String[] args) {
+		// Create object of the facebook page
+		
+		FacebookPage.owner = "Facebook Inc"
+		
+		FacebookPage fb = new FacebookPage();
+		fb.name = "HomePage";
+		fb.pageviews = 1001;
+		
+		System.out.println(fb.name);
+		System.out.println(fb.pageviews);
+	}
+
+}

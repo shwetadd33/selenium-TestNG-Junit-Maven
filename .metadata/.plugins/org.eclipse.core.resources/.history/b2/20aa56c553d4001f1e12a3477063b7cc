@@ -1,0 +1,14 @@
+
+public class TestBMW {
+
+	public static void main() {
+		//Car c = new Car(); // we can not create a object of an abstract class
+		
+		BMW b = new BMW();
+		
+		b.speed();
+		b.maintain();
+		b.refuel();
+	}
+}
+

@@ -1,0 +1,21 @@
+package testcases;
+
+import org.junit.Test;
+
+public class ShopMobilePhone {
+	
+	@Test
+	public void serachForMobile() {
+		System.out.println("Searching for mobile");
+	}
+	
+	@Test
+	public void selectMobile() {
+		System.out.println("Selecting Mobile");
+	}
+	
+	@Test
+	public void checkout() {
+		System.out.println("Checkout Mobile");
+	}
+}

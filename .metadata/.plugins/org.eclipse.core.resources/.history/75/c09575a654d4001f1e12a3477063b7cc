@@ -1,0 +1,6 @@
+
+public interface CarMain {
+	public void speed();
+	public void maintain();
+	public void refule();
+}

@@ -1,0 +1,17 @@
+package testcases;
+
+import org.junit.Test;
+
+import org.junit.Assert;
+
+public class Validations {
+
+	@Test
+	public void validate() {
+		String expectedValue = "A";
+		String actualValue = "A";
+		Assert.assertEquals(expectedValue, actualValue);    // To compare for expected and actual results
+		Assert.assertTrue("Error Message", 4>2);
+		Assert.assertFalse("false expected got true", false);
+	}
+}

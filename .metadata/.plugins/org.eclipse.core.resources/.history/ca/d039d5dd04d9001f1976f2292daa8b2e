@@ -1,0 +1,43 @@
+package reports;
+
+
+import java.io.File;
+import java.util.Date;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
+
+public class ExtentManager {
+	static ExtentReports reports;
+	
+	public static ExtentReports getReports() {
+		if(reports == null) {
+			reports = new ExtentReports();
+			
+			//init the report folder
+			Date d = new Date();
+			
+			String folder = d.toString().replaceAll(":", "-");
+			String reportsFolderPath = System.getProperty("user.dir") + folder + "//reports//";
+			String screenshotFoldePathr = reportsFolderPath + "//screenshots";
+			
+			String path = System.getProperty("user.dir") + "//reports//" + screenshotFoldePathr;
+			
+			File file = new File(path);
+			file.mkdirs(); // Creates dynamic report folder name and create screenshot folder inside it
+			
+			ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportsFolderPath);
+			sparkReporter.config().setReportName("Production Regression Testing");
+			sparkReporter.config().setDocumentTitle("Automation Reports");
+			sparkReporter.config().setTheme(Theme.STANDARD);
+			sparkReporter.config().setEncoding("utf-8");
+			
+			reports.attachReporter(sparkReporter);
+		}
+		
+		return reports;
+	}
+	
+}

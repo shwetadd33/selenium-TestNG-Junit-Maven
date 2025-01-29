@@ -1,0 +1,13 @@
+package testcases;
+
+import junit.framework.Assert;
+
+public class Validations {
+
+	@Test
+	public void validate() {
+		String expectedValue = "A";
+		String actualValue = "B";
+		Assert.assertEquals(expectedValue, actualValue);
+	}
+}

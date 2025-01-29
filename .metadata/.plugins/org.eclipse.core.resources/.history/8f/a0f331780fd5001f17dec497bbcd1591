@@ -1,0 +1,31 @@
+package testcases;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+
+//Step 1:
+@RunWith (Parameterized.class)
+public class LoginTest {
+	
+	// Step 2:
+	String username;
+	String password;
+	
+	// Step3: build a constructor
+	
+	public LoginTest(String username, String password) {
+		this.username = username;
+		this.password = password;
+	}
+	
+	@Test
+	public void LoginTest() {
+		
+	}
+	
+	// Step 4:
+	@Parameters
+	public static Collection<Object[]> getData(){
+		
+	}
+}
