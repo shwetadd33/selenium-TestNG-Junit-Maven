@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-11T15:18:14 GMT-06:00" name="Default suite" finished-at="2025-02-11T15:18:24 GMT-06:00" duration-ms="10394">
+    <groups>
+    </groups>
+    <test started-at="2025-02-11T15:18:14 GMT-06:00" name="Default test" finished-at="2025-02-11T15:18:24 GMT-06:00" duration-ms="10394">
+      <class name="exercises3.WebTableTest">
+        <test-method signature="TestScrollPosts()[pri:0, instance:exercises3.WebTableTest@2a266d09]" started-at="2025-02-11T15:18:14 GMT-06:00" name="TestScrollPosts" finished-at="2025-02-11T15:18:24 GMT-06:00" duration-ms="10361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestScrollPosts -->
+      </class> <!-- exercises3.WebTableTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

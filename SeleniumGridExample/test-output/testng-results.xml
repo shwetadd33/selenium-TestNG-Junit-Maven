@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-12T19:06:03 GMT-06:00" name="Suite" finished-at="2025-02-12T19:06:23 GMT-06:00" duration-ms="19260">
+    <groups>
+    </groups>
+    <test started-at="2025-02-12T19:06:03 GMT-06:00" name="Test" finished-at="2025-02-12T19:06:23 GMT-06:00" duration-ms="19260">
+      <class name="testcases.testCaseA3">
+        <test-method signature="TestA3()[pri:0, instance:testcases.testCaseA3@68c72235]" started-at="2025-02-12T19:06:03 GMT-06:00" name="TestA3" finished-at="2025-02-12T19:06:11 GMT-06:00" duration-ms="7502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestA3 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testcases.testCaseA3@68c72235]" started-at="2025-02-12T19:06:19 GMT-06:00" name="quitBrowser" finished-at="2025-02-12T19:06:21 GMT-06:00" duration-ms="1784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- testcases.testCaseA3 -->
+      <class name="testcases.testCaseA2">
+        <test-method signature="TestA2()[pri:0, instance:testcases.testCaseA2@6b8ca3c8]" started-at="2025-02-12T19:06:03 GMT-06:00" name="TestA2" finished-at="2025-02-12T19:06:11 GMT-06:00" duration-ms="7425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestA2 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testcases.testCaseA2@6b8ca3c8]" started-at="2025-02-12T19:06:18 GMT-06:00" name="quitBrowser" finished-at="2025-02-12T19:06:19 GMT-06:00" duration-ms="1792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- testcases.testCaseA2 -->
+      <class name="testcases.testCaseA5">
+        <test-method signature="TestA5()[pri:0, instance:testcases.testCaseA5@7671cb68]" started-at="2025-02-12T19:06:03 GMT-06:00" name="TestA5" finished-at="2025-02-12T19:06:17 GMT-06:00" duration-ms="13661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestA5 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testcases.testCaseA5@7671cb68]" started-at="2025-02-12T19:06:22 GMT-06:00" name="quitBrowser" finished-at="2025-02-12T19:06:23 GMT-06:00" duration-ms="793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- testcases.testCaseA5 -->
+      <class name="testcases.testCaseA4">
+        <test-method signature="TestA4()[pri:0, instance:testcases.testCaseA4@73ee04c8]" started-at="2025-02-12T19:06:03 GMT-06:00" name="TestA4" finished-at="2025-02-12T19:06:17 GMT-06:00" duration-ms="13661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestA4 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testcases.testCaseA4@73ee04c8]" started-at="2025-02-12T19:06:21 GMT-06:00" name="quitBrowser" finished-at="2025-02-12T19:06:22 GMT-06:00" duration-ms="827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- testcases.testCaseA4 -->
+      <class name="testcases.testCaseA1">
+        <test-method signature="TestA1()[pri:0, instance:testcases.testCaseA1@49dc7102]" started-at="2025-02-12T19:06:03 GMT-06:00" name="TestA1" finished-at="2025-02-12T19:06:09 GMT-06:00" duration-ms="5745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestA1 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testcases.testCaseA1@49dc7102]" started-at="2025-02-12T19:06:17 GMT-06:00" name="quitBrowser" finished-at="2025-02-12T19:06:18 GMT-06:00" duration-ms="365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- testcases.testCaseA1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
